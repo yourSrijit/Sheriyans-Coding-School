@@ -9,7 +9,7 @@ html ,body{
     width: 100%;
 }
 #page1{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: #EFEAE3;
     position: relative;
@@ -91,4 +91,10 @@ html ,body{
     font-size: 8vw;
     line-height: 9vw;
     text-align: right;
+}
+
+#page1 video{
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 4vw;
 }
