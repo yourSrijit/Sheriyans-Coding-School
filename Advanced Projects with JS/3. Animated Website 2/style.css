@@ -13,11 +13,13 @@ html ,body{
     width: 100%;
     background-color: #EFEAE3;
     position: relative;
+    padding: 0 2vw;
 }
 
 /* Style for NavBar  */
 
 #nav{
+    padding: 2vw 0;
     width: 100%;
     padding: 2vw 3vw;
     display: flex;
@@ -67,4 +69,26 @@ html ,body{
 }
 .nav-left h4:hover a{
     color: #fff;
+}
+
+#center{
+    height: 65vh;
+    width: 100%;
+    
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 2.5vw;
+    border-bottom: 1px solid black;
+}
+#center #left p{
+    width: 25vw;
+    font-size: 1.8vw;
+    line-height: 1.4vw;
+    font-weight: 800;
+}
+#center #right h1{
+    font-size: 8vw;
+    line-height: 9vw;
+    text-align: right;
 }
