@@ -286,9 +286,87 @@ html ,body{
 
 @keyframes anime3{
     from{
-        transform: translate(5%,-11%) skew(0);
+        transform: translate(7%,-11%) skew(0);
     }
     to{
-        transform: translate(-12%,11%) skew(-12deg); 
+        transform: translate(-5%,11%) skew(-12deg); 
     }
+}
+#heading2{
+    position: relative;
+    padding: 0 3vw;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    bottom: 1vh;
+  
+}
+#heading2 #dot2{
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #FE320A;
+}
+
+/* PAGE 2 END  */
+
+
+/* Page 3 start  */
+#page3{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #EFEAE3;
+    padding: 4;
+
+}
+#page3 .element{
+    width: 100%;
+    height: 150px;
+    position: relative;
+   border-bottom: 1px solid rgba(22, 21, 21, 0.397);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.element .effect{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: rgb(255,152,49);
+    top: -100%;
+    transition: all ease-in-out .3s;
+
+}
+#page3 .element h1{
+    font-size: 3vw;
+    position: relative;
+    display: inline-block;
+
+}
+#page3 .element:hover .effect{ 
+    top: 0;
+}
+#page3 .element .def{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+#page3 .element .def h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+#page3 .element .def p{
+    font-weight: 500;
+    color: #9c9b97;
+    font-size: 18px;
 }
