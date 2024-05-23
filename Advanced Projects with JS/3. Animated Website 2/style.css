@@ -8,6 +8,11 @@ html ,body{
     height: 100%;
     width: 100%;
 }
+#main{
+    position: relative;
+    z-index: 15;
+    opacity: 0;
+}
 #page1{
     min-height: 100vh;
     width: 100%;
@@ -367,6 +372,224 @@ html ,body{
 }
 #page3 .element .def p{
     font-weight: 500;
-    color: #9c9b97;
+    color: #212120;
     font-size: 18px;
+}
+
+/* Hover video effect  */
+#fixed-image{
+    
+    z-index: 20;
+    width: 23vw;
+    height: 60vh;
+    border-radius: 12px;
+    position: fixed;
+    left: 50%;
+    top: 32%;
+    display: none;
+    background-size: cover;
+    background-position: cente;
+}
+
+/* Page 4 and Page 5  */
+
+#page4{
+    width: 100%;
+    height: 60vh;
+    background-color: #EFEAE3;
+}
+#page5{
+    width: 100%;
+    height: 100vh;
+}
+
+#footer{
+   position: fixed;
+   color: #EFEAE3;
+   z-index: 14; 
+   bottom: 0;
+   min-height: 110vh;
+   width: 100%;
+   background-color: #000;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: center;
+}
+/* Animation Colour  */
+#footer #col-animation .col-anm{
+    width: 20vw;
+    height: 20vw;
+    background-color: #FE320A;
+    border-radius: 50%;
+    position: absolute;
+    top: 5vw;
+    z-index: 13;
+    
+}
+#footer #col-animation #col-anm0{
+    left: -3%;
+    top: 7%;
+    filter: blur(25px);
+    animation-name: footer-animation;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#footer #col-animation #col-anm1{
+    left: 7%;
+    top: 8%;
+    filter: blur(25px);
+    animation-name: footer-animation;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#footer #col-animation #col-anm2{
+    left: 9%;
+    top: 4%;
+    filter: blur(25px);
+    animation-name: footer-animation;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#footer #col-animation #col-anm3{
+    left: 25%;
+    top: -2%;
+    filter: blur(25px);
+    animation-name: footer-animation;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#footer #col-animation #col-anm4{
+    left: 38%;
+    top: 7%;
+    filter: blur(25px);
+    animation-name: footer-animation;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#footer #col-animation #col-anm5{
+    left: 52%;
+    top: 4%;
+    filter: blur(25px);
+    animation-name: footer-animation;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#footer #col-animation #col-anm6{
+    left: 68%;
+    top: 5%;
+    filter: blur(25px);
+    animation-name: footer-animation;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#footer #col-animation #col-anm7{
+    left: 85%;
+    top: 8%;
+    filter: blur(25px);
+    animation-name: footer-animation;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#footer #col-animation #col-anm8{
+    left: 85%;
+    top: 29%;
+    filter: blur(25px);
+    animation-name: footer-animation;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#footer #col-animation #col-anm9{
+    left: 75%;
+    top: 8%;
+    filter: blur(25px);
+    animation-name: footer-animation;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes footer-animation{
+   from{
+    transform: translate(-10%,-10%) skew(0);
+   }
+   to{
+    transform: translate(15%,10%) skew(20deg);
+   }
+}
+
+
+#footer #header-top{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 14;
+}
+#footer #header-top ul li{
+ list-style: none;
+ font-size: 2vw;
+}
+#footer #header-top #mail p{
+   font-size: 1vw;
+   margin-bottom: 15px;
+}
+#footer #header-top #mail input{
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 1vw;
+    border-bottom: 1px solid #fff;
+}
+
+
+#footer h1{
+    font-size: 23vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom:1px solid #fff ;
+    padding: 0 2vw;
+    z-index: 14;
+}
+#footer #footer-bottom{
+    z-index: 14;
+}
+#footer #footer-bottom ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16vw;
+    padding: 2vw 0;
+    cursor: pointer;
+    position: relative;
+    z-index: 50;
+}
+#footer #footer-bottom ul li{
+    font-size: 25px;
+    cursor: pointer;
+    list-style: none;
+   
 }
