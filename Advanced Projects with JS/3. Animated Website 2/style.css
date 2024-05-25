@@ -13,6 +13,8 @@ html ,body{
     z-index: 15;
     opacity: 0;
 }
+
+/* PAGE 1 START  */
 #page1{
     min-height: 100vh;
     width: 100%;
@@ -30,6 +32,10 @@ html ,body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+}
+#nav h3{
+    display: none;
 }
 .nav-left{
     display: flex;
@@ -178,8 +184,9 @@ html ,body{
         transform: translate(10%,10%);
     }
 }
+/* PAGE1  END  */
 
-/* Page 2  */
+/* Page 2 start  */
 
 /* Moving Text ✅✅ */
 #page2{
@@ -683,4 +690,187 @@ html ,body{
     cursor: pointer;
     list-style: none;
    
+}
+
+
+
+/* Responsive Section  */
+@media (max-width:520px){
+    #page1{
+        width: 100vw;
+        padding: 0 5vw;
+    }
+    
+    /* Style for NavBar  */
+    
+    #nav{
+        padding: 8vw 0;
+        position: relative;
+        z-index: 110;
+        
+    }
+    #fix-scr{
+        width: 100%;
+        height: 100vh;
+        background-color: #00000057;
+    }
+    #nav h3{
+        display: block;
+        padding: 2vw 4vw;
+        font-size: 1.8rem;
+        border:  1px solid #ababab;
+        border-radius: 50px;
+        font-size: 4vw;
+        font-weight: 200;
+    }
+    #nav img{
+       height:  15vw;
+    }
+    .nav-left{
+        gap: 1vw;
+        display: none;
+    }
+
+    .nav-left h4{
+        padding: 13px 22px;
+        border: 1px solid #8a8a8a89;
+        border-radius: 50px;
+        font-weight: 500;
+        cursor: pointer;
+        overflow: hidden;
+        position: relative;
+        transition: all ease 0.4s;
+    }
+    
+    
+    .nav-left h4::after{
+       content: "";
+       width: 100%;
+       height: 100%;
+       position: absolute;
+       background-color: #110303;
+       left: 0;
+       bottom: -100%;
+       border-radius: 50%;
+       transition: all ease 0.4s;
+    }
+    .nav-left h4:hover::after{
+        bottom: 0;
+        border-radius: 0;
+    }
+    
+    .nav-left h4 a{
+        text-decoration: none;
+        color: #000;
+        font-size: 25px;
+        z-index: 10;   
+        position: relative;
+    }
+    .nav-left h4:hover a{
+        color: #fff;
+    }
+    
+    #center{
+        height: 65vh;
+        width: 100%;
+        
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding-bottom: 2.5vw;
+        border-bottom: 1px solid black;
+    }
+    #center #left p{
+        width: 25vw;
+        font-size: 1.8vw;
+        line-height: 1.4vw;
+        font-weight: 800;
+    }
+    #center #right h1{
+        font-size: 8vw;
+        line-height: 9vw;
+        text-align: right;
+    }
+    
+    #page1 video{
+        position: relative;
+      width: 100%;
+      border-radius: 20px;
+      margin-top: 4vw;
+    }
+    
+    /* Colour Animation  */
+    #hero{
+        position: absolute;
+        width: 46vw;
+        height: 36vw;
+        background: linear-gradient(#FE320A,#fe780acb);
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        right: 0;
+        top: 65vh;
+        filter: blur(25px);    
+    }
+    #hero1{
+        position: absolute;
+        width: 35vw;
+        height: 35vw;
+        border-radius: 50%;
+        background: linear-gradient(#FE320A,#fe780acb);
+        animation-name: anime;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    #hero2{
+        position: absolute;
+        width: 35vw;
+        height: 35vw;
+        border-radius: 50%;
+        background: linear-gradient(#FE320A,#fe780acb);
+        animation-name: anime1;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    #hero3{
+        position: absolute;
+        width: 35vw;
+        height: 35vw;
+        border-radius: 50%;
+        background: linear-gradient(#FE320A,#fe780acb);
+        animation-name: anime2;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    
+    @keyframes anime{
+        from{
+            transform: translate(-0%,-8%);
+        }
+        to{
+            transform: translate(10%,10%);
+        }
+    }
+    @keyframes anime1{
+        from{
+            transform: translate(-5%,-5%);
+        }
+        to{
+            transform: translate(10%,10%);
+        }
+    }
+    @keyframes anime2{
+        from{
+            transform: translate(-4%,-9%);
+        }
+        to{
+            transform: translate(10%,10%);
+        }
+    }
+
 }
