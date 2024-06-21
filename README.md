@@ -1,1 +1,1 @@
-# Sheriyans-Coding-SchoolS
+# Sheriyans-Coding-School
